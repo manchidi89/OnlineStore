@@ -1,0 +1,193 @@
+/*Thsi will remove all the default margin and padding of 16px on all the elements*/
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  ul {
+    position: fixed;/*Will ensure the position of the element does not change even when scrolling up and down*/
+    width: 100%;
+    list-style-type: none;/*Will remove the default newline on the list items*/
+    margin: 0;
+    padding-left: 0;
+    overflow: hidden;
+    background-color: rgb(26, 41, 126);
+  }
+
+  li {
+    float: right;/*Will move the list items to the right of the page*/
+    text-align: center;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: rgb(37, 97, 170);
+    transition-delay: 0.4s;
+  }
+
+  #bottomNav ul {
+    list-style-type: none;/*Will remove the default newline on the list items*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;/*Will ensure the position of the element does not change even when scrolling up and down*/
+    bottom: 0;
+    width: 100%;
+  }
+/*This will move the items to the left of the page*/
+  #bottomNav>ul>li {
+    float: left;
+  }
+/*This will remove the underline on the achor tags and center the element*/
+  #bottomNav>ul>li>li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li {
+    transition: width 4s, height 4s;
+  }
+
+  #bottomNav>ul>li a:hover {
+    background-color: rgb(116, 91, 91);
+
+
+  }
+
+  #bottomNav>ul>li a:visited{
+  background-color: red;
+  }
+
+  .active {
+    background-color: #04AA6D;
+  }
+/*This will give the background to the page*/
+  #myBackground {
+    background-image: url("../Images/pakata-goh-RDolnHtjVCY-unsplash\ \(1\).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+
+/*This will style the search field*/
+#btnSearch{
+    text-align: left;
+    box-sizing: border-box;
+    height: 40px;
+    width: 540px;
+    border-radius: 10px solid rgb(17,15,159);
+    border-width: 0px;
+    font-size: 17px;
+    font-family: monospace;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+#submitBtn{
+    background-color: rgb(18, 16, 147);
+    color: white;
+    height: 40px;
+    width: 100px;
+}
+
+/*This will change the color of submit button from blue to red when the button is hovered*/
+#submitBtn:hover{
+    background-color: rgb(198, 26, 17);
+}
+#myForm{
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: right;
+}
+#costumerName{
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 10px;
+    width: 200px;
+}
+/*This will give the text color of white in this two ids and the tag label respectively*/
+#male, #female, label{
+    color:white; 
+    font-family: monospace;
+}
+
+/*Thsi will size the name of countries in the select tag*/
+#listCountries{
+    height: auto;
+    color: black;
+    font-weight: 10px;
+    font-size: 15px;
+    width: 400px;
+}
+
+#submitComment{
+    resize: none;
+
+}
+
+#btnMeetUs{
+  height: 50px;
+  width: 280px;
+  background-color: rgb(16, 30, 137);
+  color: white;
+  border-radius: 4px;
+}
+
+#btnSignUp{
+  height: 50px;
+  width: 280px;
+  background-color: rgb(16, 30, 137);
+  color: white;
+  border-radius: 4px;
+}
+a{
+  text-decoration: none;
+  text-align: center;
+}
+#btnShopNow #btnMeetUs #btnShopNow:hover{
+  cursor: pointer;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#btnShopNow{
+    height: 50px;
+    width: 280px;
+    background-color: rgb(16, 30, 137);
+    color: white;
+    border-radius: 4px;
+}
+
+#btnMeetUs #btnShopNow:hover{
+    cursor: pointer;
+}
+a:hover{
+    cursor: pointer;
+}
+/*This will style the company name header*/
+#divHeaderText{
+    text-align: center;
+    margin-top: inherit;
+     font-size: 25px;
+     color: whitesmoke;
+     font-family: monospace;
+     box-shadow:10px 10px 21px -20px red;  
+}
+/*This will style the company brief description*/
+#pFirst{
+    text-align: center; 
+    font-size: 15px;
+    color: whitesmoke;
+    font-family: monospace;
+    box-shadow:10px 10px 21px -20px whitesmoke;
+}

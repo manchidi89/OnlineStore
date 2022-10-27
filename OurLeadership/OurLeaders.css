@@ -1,0 +1,59 @@
+*{
+    font-family: monospace;
+}
+
+/*This will create four float boxes of 20% size of the parent container each*/
+.floatBox{
+    float:left;
+   margin-top: 10%;
+    height: 600px;
+    margin-left: 5px;
+    width: 20%;
+    padding-top: 40px;
+   text-align:center;
+   overflow: auto;
+   box-shadow:10px 10px 21px -10px aqua;
+}
+
+footer:hover{
+    cursor: pointer;
+}
+
+
+img{
+    height:200px;
+    width:200px;
+    border-radius:100px;
+    margin-right: 10%;
+}
+p{
+    clear: both;
+}
+
+/*This will center all the elements in the body tag and  start the background color animation contineously*/
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    animation: backgroundColorList 5s infinite;
+}
+
+/*This container will hold the different background colors for animating the body background*/
+@keyframes backgroundColorList{
+    0%{
+        background-color: rgb(133, 80, 14);
+    }
+    25%{
+        background-color: rgb(20, 200, 65);
+    }
+    50%{
+        background-color: rgb(92, 7, 49);
+    }
+    75%{
+        background-color: rgb(27, 103, 105);
+    }
+    100%{
+        background-color: rgb(179, 109, 109);
+    }
+}

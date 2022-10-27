@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Catalog</title>
+    <script src="https://kit.fontawesome.com/fb72f68d61.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+   
+    <link rel="stylesheet" href="../OnlineCatalog/onlineCatalog.css">
+
+    <style>
+        .button{
+            text-align: center;
+            height: 60px;
+            width: 150px;
+            color: white;
+            background-color: rgb(19, 114, 203);
+            font-size: 20px;
+            border-radius: 5px;
+            /*padding: 40px;*/
+        }
+        .button:hover{
+           cursor: pointer;
+           color: white;
+            background-color: rgb(16, 171, 117);
+        }
+        #goToCart{
+            height: 50px;
+        }
+        #goToCart:hover{
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h1 style="padding: 10px;text-align:center">Shop Cheap Online</h1>
+        <ul>
+            
+          <li style="padding-right: 80px;padding-top: 0px;margin-top: 0px;top: 0px;"><a href="../OnlineCart/OnlineCart.html"> <i class="fa-solid fa-cart-shopping" style="color: white; height:20px; width: 20px;"></i>  <span id="totalCartItems"></span></a></li>
+        <li><span id="grandTotal"></span></li>
+        </ul>
+      </div>
+      <br><br><br><br>
+  
+
+    <div id="firstRow">
+        <div style="background-color: red;width: auto;">
+            <img src="../Images/Alienware_Hakpag.jpg"
+                    alt="Dell laptop" style="height:600px;width:100%">
+            <header>
+                <h4 id="myFirstItemName">AllienWare 23.6-inch Full HD Curved </h4>
+            </header>
+            <p>23.6-inch Curved Display/Full HD (1920x1080) Resolution/1ms Response Time/LED Edgelight System/AMD FreeSync Premium/Height Adjustable/VESA Wall Mountable (100x100)
+                /2x HDMI, 1x DP, 1x Headphone Jack.</p>
+            <table>
+                <tr>
+                    <th>Now Price</th>
+                    <th>Was Price</th>
+                    <th>Save</th>
+                </tr>
+                <tr style="color: black;">
+                    <td>R<span id="myFirstItemPrice">12000.99</span><sup>c</sup></td>
+                    <td><s> 14000.95<sup>c</sup></s></td>
+                    <td>R2000.03<sup>c</sup></td>
+                </tr>
+            </table>
+            <button class="button">ADD TO CART</button>
+        </div>
+        <div style="background-color: blue;width: auto;">
+            <img src="../Images/alienware-ickPGVMMr98-unsplash.jpg"
+                    alt="Dell laptop" style="height:600px;width:100%">
+            <header>
+                <h4 id="mySecondItemName">AlienWare 27-Inch FHD 144Hz Curved</h4>
+            </header>
+            <p>TFHD (1920X1080) Curved Display/144Hz Refresh Rate/AMD FreeSync Technology/2 x HDMI Ports/1 x Display Port/VESA CompatibleSlim Bezel/Improved Viewable Area
+                /ComfortView with Flicker-free Screen/250 cd/m² Brightness</p>
+            <table>
+                <tr>
+                    <th>Now Price</th>
+                    <th>Was Price</th>
+                    <th>Save</th>
+                </tr>
+                <tr>
+                    <td>R<span id="mySecondItemPrice">13000.99</span><sup>c</sup></td>
+                    <td><s> 14000.95<sup>c</sup></s></td>
+                    <td>R2000.03<sup>c</sup></td>
+                </tr>
+            </table>
+            <button  class="button">ADD TO CART</button>
+        </div>
+        <div style="background-color: green;width: auto;">
+            <img src="../Images/alienware-0NN2dl5DOvw-unsplash.jpg"
+                    alt="Dell laptop" style="height:600px;width:100%">
+            <header>
+                <h4 id="myThirdItemName">AlienWare 26-Inch QHD</h4>
+            </header>
+            <p> QHD (2560X1440) IPS Display/165Hz (1ms) Refresh Rate/AMD FreeSync Premium Pro/G-Sync Technology/2 x HDMI Ports/1 x Display Port/VESA CompatibleDell 27-Inch QHD 165Hz Gaming Monitor S2721DGFA</p>
+            <table>
+                <tr>
+                    <th>Now Price</th>
+                    <th>Was Price</th>
+                    <th>Save</th>
+                </tr>
+                <tr>
+                    <td>R<span id="myThirdItemPrice">11000.99</span><sup>c</sup></td>
+                    <td><s> 14000.95<sup>c</sup></s></td>
+                    <td>R2000.03<sup>c</sup></td>
+                </tr>
+            </table>
+            <button  class="button">ADD TO CART</button>
+        </div>
+    </div>
+    
+    <!--Computers Div-->
+    <br><br>
+    <div id="secondRow">
+        <div style="background-color: rgb(46, 114, 144);height: fit-content;width: auto;">
+            <img src="../Images/dell-pduutGbL2-M-unsplash.jpg"
+                    alt="Dell laptop" style="height:600px;width:100%" id="fourthImage">
+            <header>
+                <h4 id="myFourthItemName"> Dell XPS 3500 MIni Core i7th</h4>
+            </header>
+            <p>The Dell XPS 3500 Mini has been completely redesigned while retaining the elegance that Dell customers
+                adore. At 1.25 kilograms and 19.4 millimeters in thickness, the Dell XPS 3500 Mini Core is an
+                extraordinarily versatile and lightweight, compact notebook.</p>
+            <table id="myTable">
+                <tr>
+                    <th>Now Price</th>
+                    <th>Was Price</th>
+                    <th>Save</th>
+                </tr>
+                <tr>
+                    <td>R<span id="myFourthItemPrice">14000.99</span><sup>c</sup></td>
+                    <td><s> 14000.95</s><sup>c</sup></td>
+                    <td>R2000.03<sup>c</sup></td>
+                </tr>
+            </table>
+            <button  class="button">ADD TO CART</button>
+        </div>
+        <div style="background-color: rgb(70, 64, 64);height: fit-content;width: auto;">
+            <img src="../Images/carlos-muza-hpjSkU2UYSU-unsplash.jpg"
+                    alt="Dell laptop" style="height:600px;width:100%" id="fifthImage">
+            <header>
+                <h4 id="myFifthItemName">Dell Latitude 5420 14inch i5-1135G7 11th Gen</h4>
+            </header>
+            <p>The Dell Latitude 5420 has been completely redesigned while retaining the elegance that Dell customers
+                adore. At 1.25 kilograms and 19.4 millimeters in thickness, the Dell Latitude 5420 Ultrabook is an
+                extraordinarily versatile and lightweight, compact notebook.</p>
+            <table>
+                <tr>
+                    <th>Now Price</th>
+                    <th>Was Price</th>
+                    <th>Save</th>
+                </tr>
+                <tr>
+                    <td>R<span id="myFifthItemPrice">15000.99</span><sup>c</sup></td>
+                    <td><s> 14000.95<sup>c</sup></s></td>
+                    <td>R2000.03<sup>c</sup></td>
+                </tr>
+            </table>
+            <button  class="button">ADD TO CART</button>
+        </div>
+    
+    </div>
+    
+    <script src="../OnlineCatalog/onlineStore.js"></script>
+</body>
+
+</html>

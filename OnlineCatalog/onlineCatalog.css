@@ -1,0 +1,100 @@
+/*This will create three block of grid type @height of 850px each and @width of 33.33%*/
+ #firstRow {
+    display: grid;
+    gap: .3rem;
+    grid-template-rows: 870px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/*This will create the grid of 50% each of the entire parent display*/
+#secondRow {
+    display: grid;
+    gap: 0.3rem;
+    grid-template-columns: 50% 50%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-family: monospace;
+}
+
+tr:nth-child(even):hover {
+    background-color: rgba(24, 14, 110, 0.8);
+    color: #FFF;
+}
+
+h4,p {
+    font-family: monospace;
+}
+
+
+/*Will change the colorful each to two color being black and white*/
+img:hover{
+    filter: grayscale(100%);
+   
+}
+
+#fourthImage:hover,#fifthImage:hover{
+    transform: scale(1.5);/*This will resize the image 0.5% bigger*/
+}
+
+.parallelogramShape{
+    width: inherit;
+    height: 40px;
+    background-color: #0c9087;
+    transform: skew(-20deg);
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+  
+}
+
+.parallelogramShape:hover{
+    background-color: #3520ab;
+    transform: skew(20deg);
+}
+*{
+ color: #FFF;
+ font-family: monospace;
+}
+
+ul {
+   /* position: fixed;/*Will ensure the position of the element does not change even when scrolling up and down*/
+    width: 100%;
+    list-style-type: none;/*Will remove the default newline on the list items*/
+    margin: 0;
+    padding-left: 0;
+    overflow: hidden;
+    background-color: rgb(26, 41, 126);
+  }
+
+  li {
+    float: right;/*Will move the list items to the right of the page*/
+    text-align: center;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: rgb(37, 97, 170);
+    transition-delay: 0.4s;
+  }
+  h1{
+    color: rgb(17, 27, 146);
+    font-size: 30px;
+  }
+

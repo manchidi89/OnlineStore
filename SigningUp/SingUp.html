@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SingUp</title>
+    <style>
+        label{
+            font-family: monospace;
+            color:white;
+        }
+        input[type=text]{
+             border: none;
+             border-bottom: 3px solid rgb(34, 4, 168);
+             width: 400px;
+             padding: 12px 20px;
+             margin:8px 0;
+             font-family: monospace;
+        }
+        input[type=email]{
+            border: none;
+             border-bottom: 2px solid rgb(34, 4, 168);
+             width: 400px;
+             padding: 12px 20px;
+             margin:8px 0;
+             font-family: monospace;
+        }
+        input[type=submit]{
+            width: 300px;
+            height: 150px;
+            text-align: center;
+            background-color: rgb(30, 30, 173);
+            font-size: 16px;
+        }
+        input[type=submit]:hover{
+            background-color: rgb(14, 189, 14);
+            cursor: pointer;
+        }
+        body{
+       /* background-image: linear-gradient(to right,33deg, rgba(131,180,1), rgba(252,176,69,1),58%,rgba(253,29,29,1) 81%);*/
+        background-image: linear-gradient(to right, #474f57, #2d458c);
+        }
+    </style>
+</head>
+<body style="display:flex;justify-content: center;align-items: center;"><!--Style inside the body tag will align every element inside it to the center ,and one after another inline-->
+    <form action="#" method="post" style="padding-top: 20%;"><!--Post method to hide data on the browser-->
+        <label>First Name</label>
+        <br>
+        <!--maximum length for names is set -->
+        <input type="text" placeholder="Type your First Name Here(e.g Mahlatsi)" required>
+        <br><br>
+        <label >Last Name</label>
+        <br>
+        <input type="text" placeholder="Type your Last Name Here(e.g Manchidi)" required>
+        <br><br>
+        <label>Email Address</label>
+        <br>
+        <input type="email" name="Email" id="Email" placeholder="Type your Email Address Here(e.g Liam@gmail.com)" required>
+        <br><br>
+    <input type="submit" value="SUBMIT">
+    </form>
+</body>
+</html>
